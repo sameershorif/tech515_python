@@ -2,7 +2,7 @@
 x = 0
 while x < 10:
     print(f"x -> {x}")
-    # If we don't increment x, the while condition will ALWAYS be true → infinite loop
+    # If we don't increment x, the while condition will always be true → infinite loop
     x = x + 1
 
 

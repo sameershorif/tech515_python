@@ -44,9 +44,7 @@ while guesses_left > 0:
         # Tell the user how many guesses they have left
         print(f"You have {guesses_left} guesses left.")
 
-# -----------------------
-# END OF GAME
-# -----------------------
+
 # If guesses_left is 0, the player has lost
 if guesses_left == 0:
     print("You've run out of guesses!")
