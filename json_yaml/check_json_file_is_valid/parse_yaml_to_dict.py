@@ -1,4 +1,4 @@
-import yaml   # Requires: pip install pyyaml
+import yaml
 
 
 # 1. Open the YAML file and load it as a dict

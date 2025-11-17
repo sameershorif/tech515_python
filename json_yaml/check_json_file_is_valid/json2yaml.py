@@ -1,10 +1,10 @@
 import json
 import os
 import sys
-import yaml   # Requires: pip install pyyaml
+import yaml
 
 
-# 1. VALIDATE INPUT ARGUMENTS
+# VALIDATE INPUT ARGUMENTS
 
 # Expected usage:
 #python json2yaml.py source.json target.yaml
@@ -29,7 +29,7 @@ else:
     exit(1)
 
 
-# 2. CONVERT JSON OBJECT → YAML STRING
+# CONVERT JSON OBJECT → YAML STRING
 
 yaml_output = yaml.dump(
     source_content,
@@ -38,7 +38,7 @@ yaml_output = yaml.dump(
 )
 
 
-# 3. SAVE YAML TO FILE (OR PRINT IF NO TARGET FILE)
+# SAVE YAML TO FILE (OR PRINT IF NO TARGET FILE)
 
 # sys.argv[2] is optional
 if len(sys.argv) < 3:
@@ -49,7 +49,7 @@ if len(sys.argv) < 3:
 
 target_path = sys.argv[2]
 
-# 2.2 Check that target file doesn't already exist
+#  Check that target file doesn't already exist
 if os.path.exists(target_path):
     print(f"ERROR: Target file '{target_path}' already exists. Not overwriting.")
     exit(1)

@@ -3,9 +3,6 @@ import os
 import yaml
 import json
 
-# Expected usage:
-#   python yaml2json.py source.yaml target.json
-
 
 # 1. Check source YAML file argument
 
